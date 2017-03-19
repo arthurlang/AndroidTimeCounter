@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lj.timecounter.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button android:id="@+id/handler" android:text="handler" android:onClick="onHandler" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/thread.sleep" android:text="thread.sleep" android:onClick="onSleep" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/timer_timertask" android:text="timer_timertask" android:onClick="onTimer" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/scheduledExecutorService_timertask" android:onClick="onScheduledExecutorService" android:text="scheduledExecutorService_timertask" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/alarm_manager" android:text="alarm_manager" android:onClick="onAlarmManager" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/rxjava" android:text="onRxjava" android:onClick="onRxjava" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <CheckedTextView
+        android:id="@+id/Chronometer"
+        android:text="Chronometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        android:onClick="onChronometer"
+    />
+
+    <CheckedTextView
+        android:id="@+id/CountDownTimer"
+        android:text="CountDownTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        android:onClick="onCountDownTimer"
+    />
+
+    <CheckedTextView
+        android:id="@+id/mCustomChronometer"
+        android:text="CustomChronometer "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        android:onClick="onCustomChronometer"
+    />
+
+    <CheckedTextView
+        android:id="@+id/mTicker"
+        android:text="onTicker "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        android:onClick="onTicker"
+    />
+
+
+</LinearLayout>

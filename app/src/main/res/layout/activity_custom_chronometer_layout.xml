@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.lj.timecounter.view.CustomChronometer
+        android:id="@+id/chronometer"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:maxLines="1"
+        app:countDown="true"
+        android:text="已连续签到10天"
+        android:textColor="#ffffff"
+        android:textSize="11sp"/>
+
+</LinearLayout>
